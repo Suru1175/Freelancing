@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SetNet - Connecting the Future</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="theme-corporate">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark shadow-sm"
+    >
+      <div class="container">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <img
+            src="images/logo.png"
+            alt="SetNet Logo"
+            width="40"
+            height="40"
+            class="me-2 rounded-circle"
+          />
+          <span>SetNet</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav me-3" id="mainNav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero position-relative" data-aos="fade-up">
+      <!-- Background Video -->
+      <div class="video-background">
+        <iframe
+          src="https://www.youtube.com/embed/dN9Wd1Yo4B8?autoplay=1&mute=1&loop=1&playlist=dN9Wd1Yo4B8&controls=0&showinfo=0&modestbranding=1"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Content -->
+      <div
+        class="hero-content container text-center text-white position-relative"
+      >
+        <h1 class="display-4 fw-bold">
+          Transforming Networks into <br />Smart Connections
+        </h1>
+        <p class="lead">
+          We provide cutting-edge IT, networking, and infrastructure solutions
+          that empower businesses to stay connected, secure, and future-ready.
+        </p>
+        <a href="#services" class="btn btn-info btn-lg text-white mt-3">
+          Discover Our Services
+        </a>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img
+              src="images/about.jpg"
+              alt="About SetNet Multiservices Pvt. Ltd."
+              class="img-fluid rounded-4 shadow"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="col-md-6">
+            <h2 class="fw-bold text-primary mb-3">
+              About SetNet Multiservices Pvt. Ltd. 🌐
+            </h2>
+            <p class="text-muted">
+              SetNet Multiservices Pvt. Ltd. is a registered company established
+              on
+              <strong>18 April 2025</strong>, dedicated to providing
+              professional networking, brokerage, and IT infrastructure
+              solutions with a focus on quality and reliability.
+            </p>
+
+            <ul class="list-unstyled text-secondary">
+              <li>
+                🏢 <strong>Company Registration Date:</strong> 18 April 2025
+              </li>
+              <li>
+                👥 <strong>Directors:</strong> KISHOR JADHAV & ROHAN LONDHE
+              </li>
+              <li>📍 <strong>Company Office:</strong> Satara, Maharashtra</li>
+              <li>
+                ✉️ <strong>Email:</strong>
+                <a href="mailto:setnetmultiservicespvtltd@gmail.com"
+                  >setnetmultiservicespvtltd@gmail.com</a
+                >
+              </li>
+              <li>
+                🌐 <strong>Website:</strong>
+                <a href="https://setnetmultiservices.com" target="_blank"
+                  >https://setnetmultiservices.com</a
+                >
+              </li>
+            </ul>
+
+            <p class="text-muted mt-3">
+              We aim to build strong, future-ready networks and digital
+              solutions that connect businesses and empower growth across
+              industries. Our team works passionately to deliver reliable and
+              scalable IT & networking solutions.
+            </p>
+
+            <div class="mt-4">
+              <a href="#services" class="btn btn-info text-white me-2"
+                >Our Services</a
+              >
+              <a href="#contact" class="btn btn-outline-primary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light" data-aos="fade-left">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-primary">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="card service-card h-100 text-center p-4 shadow-sm rounded-4"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png"
+                class="mx-auto mb-3"
+                width="80"
+                alt="Digital Marketing"
+              />
+              <h5 class="fw-semibold">Digital Marketing Course</h5>
+              <p class="text-muted">
+                Learn comprehensive strategies for SEO, social media, and paid
+                marketing to boost business visibility.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card service-card h-100 text-center p-4 shadow-sm rounded-4"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2620/2620656.png"
+                class="mx-auto mb-3"
+                width="80"
+                alt="Brokerage Solutions"
+              />
+              <h5 class="fw-semibold">Brokerage Solutions</h5>
+              <p class="text-muted">
+                Integrated platforms for brokerage firms enabling automation,
+                analytics, and better client management.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card service-card h-100 text-center p-4 shadow-sm rounded-4"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3408/3408507.png"
+                class="mx-auto mb-3"
+                width="80"
+                alt="Stock Market Course"
+              />
+              <h5 class="fw-semibold">Stock Market Course</h5>
+              <p class="text-muted">
+                Master technical analysis, trading strategies, and market
+                fundamentals through expert-led sessions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Certificates -->
+    <section id="certificates" class="py-5 bg-white" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 class="fw-bold text-primary mb-5">📜 Company Certificates</h2>
+
+        <div class="cert-grid">
+          <!-- Certificate 1 -->
+          <div class="certificate-item">
+            <div class="card border-0 shadow-lg rounded-4 p-3 h-100">
+              <img
+                src="images/certificate_incorporation.png"
+                alt="Certificate of Incorporation"
+              />
+              <h5 class="fw-semibold mt-2">Certificate of Incorporation</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="certificate-item">
+            <div class="card border-0 shadow-lg rounded-4 p-3 h-100">
+              <img src="images/GST_certificate.png" alt="GST Certificate" />
+              <h5 class="fw-semibold mt-2">GST Certificate</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="certificate-item">
+            <div class="card border-0 shadow-lg rounded-4 p-3 h-100">
+              <img src="images/pan_card.png" alt="PAN Card" />
+              <h5 class="fw-semibold mt-2">PAN Card</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="certificate-item">
+            <div class="card border-0 shadow-lg rounded-4 p-3 h-100">
+              <img src="images/shop_act.png" alt="Shop Act" />
+              <h5 class="fw-semibold mt-2">Shop Act</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 5 -->
+          <div class="certificate-item">
+            <div class="card border-0 shadow-lg rounded-4 p-3 h-100">
+              <img src="images/udyam.png" alt="UDYAM Certificate" />
+              <h5 class="fw-semibold mt-2">UDYAM Certificate</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5" data-aos="fade-right">
+      <div class="container text-center">
+        <h2 class="section-title mb-5">Our Team</h2>
+        <div class="row justify-content-center g-4">
+          <!-- Member 1 -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden"
+            >
+              <div class="team-img-container">
+                <img
+                  src="images/kishor_Jadhav.png"
+                  class="card-img-top"
+                  alt="Kishor Jadhav"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-primary fw-bold">Kishor Jadhav</h5>
+                <p class="card-text text-muted">Founder & Network Architect</p>
+                <p class="small text-secondary">
+                  Kishor Jadhav has over 10 years of experience in IT networking
+                  and system architecture. He specializes in enterprise
+                  connectivity.
+                </p>
+                <button
+                  class="btn btn-outline-info w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#member1Modal"
+                >
+                  Know More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden"
+            >
+              <div class="team-img-container">
+                <img
+                  src="images/rohan_londhe.jpg"
+                  class="card-img-top"
+                  alt="Rohan Londhe"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-primary fw-bold">Rohan Londhe</h5>
+                <p class="card-text text-muted">Co-Founder & Operations Head</p>
+                <p class="small text-secondary">
+                  Rohan manages operations and client relations at SetNet,
+                  ensuring high-quality service delivery and smooth project
+                  execution.
+                </p>
+                <button
+                  class="btn btn-outline-info w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#member2Modal"
+                >
+                  Know More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Screenshots -->
+    <section id="whatsapp" class="py-5 bg-light" data-aos="fade-left">
+      <div class="container text-center">
+        <h2 class="section-title">WhatsApp Screenshots</h2>
+        <p class="mb-4">
+          Here’s how our support and client communication looks — quick,
+          reliable, and personal.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img
+              src="https://via.placeholder.com/400x300?text=Chat+1"
+              alt="Chat 1"
+              class="img-fluid whatsapp-img"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://via.placeholder.com/400x300?text=Chat+2"
+              alt="Chat 2"
+              class="img-fluid whatsapp-img"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://via.placeholder.com/400x300?text=Chat+3"
+              alt="Chat 3"
+              class="img-fluid whatsapp-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5" data-aos="fade-left">
+      <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8">
+            <div class="card p-4">
+              <div class="d-flex gap-3 align-items-center">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=60"
+                  alt="Client"
+                  style="
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                />
+                <div>
+                  <h6 class="mb-0">Amit Shah</h6>
+                  <small class="text-muted">CTO, BluePeak Brokers</small>
+                </div>
+              </div>
+              <hr />
+              <p class="mb-0">
+                “SetNet transformed our infrastructure — latency dropped,
+                reliability improved, and their team communicates clearly.
+                Highly recommended.”
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="card p-4">
+              <div class="d-flex gap-3 align-items-center">
+                <img
+                  src="https://images.unsplash.com/photo-1545996124-1a9a78d8f3f1?auto=format&fit=crop&w=200&q=60"
+                  alt="Client 2"
+                  style="
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                />
+                <div>
+                  <h6 class="mb-0">Renu Kapoor</h6>
+                  <small class="text-muted">Head of Ops, Finex</small>
+                </div>
+              </div>
+              <hr />
+              <p class="mb-0">
+                “Professional team and excellent post-deployment support — 24x7
+                SLA really works for us.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Contact Us</h2>
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <form
+              id="contactForm"
+              onsubmit="event.preventDefault(); handleContact();"
+            >
+              <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Branch / Department</label>
+                <input
+                  type="text"
+                  id="contactBranch"
+                  class="form-control"
+                  placeholder="e.g. Pune Branch, Sales Team"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  class="form-control"
+                  placeholder="+91 98765 43210"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  class="form-control"
+                  placeholder="example@setnet.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="contactMsg"
+                  rows="4"
+                  placeholder="Type your message..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-info text-white w-100 fw-bold"
+              >
+                Send Message
+              </button>
+              <div
+                id="contactAlert"
+                class="form-text text-success mt-2"
+                style="display: none"
+              >
+                Thanks — your message was sent (demo).
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact Info + Map -->
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm p-4">
+              <h5 class="fw-bold mb-3 text-primary">Get in Touch</h5>
+              <p><strong>📍 Head Office:</strong> Satara</p>
+              <p><strong>🏢 Branches:</strong> Pune | Bangalore | Hyderabad</p>
+              <p><strong>📞 Phone:</strong> +91 9667503793</p>
+              <p>
+                <strong>📧 Email:</strong> setnetmultiservicespvtltd@gmail.com
+              </p>
+              <p>
+                <strong>🕒 Working Hours:</strong> Mon - Sat: 9:00 AM - 6:00 PM
+              </p>
+
+              <div class="d-flex gap-3 mt-3">
+                <a href="#" class="text-decoration-none fs-4 text-primary"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="text-decoration-none fs-4 text-info"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="text-decoration-none fs-4 text-danger"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="text-decoration-none fs-4 text-success"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="#" class="text-decoration-none fs-4 text-primary"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="map-container mt-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.448792649946!2d73.929955!3d17.669754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc27f22d53b1e3f%3A0x6f6a6e68132a0e4!2s17%C2%B040'11.1%22N%2073%C2%B055'47.8%22E!5e0!3m2!1sen!2sin!4v1731086000000"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member 1 Modal -->
+    <div class="modal fade" id="member1Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header">
+            <h5 class="modal-title">Kishor Jadhav</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images/kishor_Jadhav.png"
+                  class="img-fluid rounded-3"
+                  alt="Kishor Jadhav"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="text-primary">Founder & Network Architect</h6>
+                <p>
+                  Kishor Jadhav has more than 10 years of experience in
+                  enterprise networking, IT infrastructure design, and system
+                  architecture. He specializes in building secure,
+                  high-performance network solutions for businesses.
+                </p>
+                <p>
+                  His expertise includes Cisco Routing & Switching, Network
+                  Security, MPLS, VoIP, and modern cloud-based connectivity
+                  models.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member 2 Modal -->
+    <div class="modal fade" id="member2Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header">
+            <h5 class="modal-title">Rohan Londhe</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="images/rohan_londhe.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Rohan Londhe"
+                />
+              </div>
+              <div class="col-md-8">
+                <h6 class="text-primary">Co-Founder & Operations Head</h6>
+                <p>
+                  Rohan handles operations, team coordination, and client
+                  success at SetNet. He ensures every project runs smoothly from
+                  requirement to delivery.
+                </p>
+                <p>
+                  With strong experience in service management and IT
+                  operations, he brings structure, reliability, and
+                  customer-first thinking to the company.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3 mb-0">
+      © 2025 SetNet Technologies · All rights reserved
+    </footer>
+
+    <!-- WhatsApp Floating Button (prefilled message) -->
+    <!-- NOTE: change phone and messageText below in script if needed -->
+    <a
+      id="whatsappFloat"
+      href="#"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to top -->
+    <button class="btn btn-primary to-top" id="toTop" title="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // --- AOS init ---
+      AOS.init({
+        duration: 700,
+        once: true,
+      });
+
+      // --- Simple contact & apply demo handlers (no backend) ---
+      async function handleContact() {
+        const data = {
+          name: document.getElementById("contactName").value,
+          branch: document.getElementById("contactBranch").value,
+          phone: document.getElementById("contactPhone").value,
+          email: document.getElementById("contactEmail").value,
+          message: document.getElementById("contactMsg").value,
+        };
+
+        const backendURL = "http://localhost:5000/contact";
+
+        try {
+          const res = await fetch(backendURL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+
+          const result = await res.json();
+
+          if (res.ok) {
+            document.getElementById("contactForm").reset();
+            const el = document.getElementById("contactAlert");
+            el.style.display = "block";
+            setTimeout(() => (el.style.display = "none"), 3000);
+          } else {
+            alert("Error: " + result.error);
+          }
+        } catch (err) {
+          alert("Server unreachable. Please try again later.");
+          console.error(err);
+        }
+      }
+
+      function handleApply() {
+        document.getElementById("applyForm").reset();
+        const el = document.getElementById("applyAlert");
+        el.style.display = "block";
+        setTimeout(() => (el.style.display = "none"), 3000);
+      }
+
+      // --- WhatsApp pre-filled message ---
+      // Edit these values if you want different phone/message.
+      const waPhone = "917499151431"; // e.g. country code + number (no + or dashes)
+      const messageText =
+        "Hi SetNet team! I'm interested in your services. Please connect."; // prefilled message
+      const waHref = `https://wa.me/${waPhone}?text=${encodeURIComponent(
+        messageText
+      )}`;
+      document.getElementById("whatsappFloat").setAttribute("href", waHref);
+
+      // --- Active nav link on scroll ---
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("#mainNav .nav-link");
+
+      function onScroll() {
+        const scrollPos = window.scrollY + 120;
+        sections.forEach((sec) => {
+          const top = sec.offsetTop;
+          const bottom = top + sec.offsetHeight;
+          const id = sec.getAttribute("id");
+          const link = document.querySelector(
+            `#mainNav .nav-link[href="#${id}"]`
+          );
+          if (!link) return;
+          if (scrollPos >= top && scrollPos < bottom) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+
+        // show to-top button
+        const toTopBtn = document.getElementById("toTop");
+        if (window.scrollY > 400) toTopBtn.classList.add("show");
+        else toTopBtn.classList.remove("show");
+      }
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("load", onScroll);
+
+      // to-top click
+      document
+        .getElementById("toTop")
+        .addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        );
+
+      // Smooth nav click small tweak for offset (navbar fixed)
+      document.querySelectorAll('a.nav-link[href^="#"]').forEach((a) => {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          const id = this.getAttribute("href").slice(1);
+          const el = document.getElementById(id);
+          if (!el) return;
+          const y = el.getBoundingClientRect().top + window.scrollY - 70; // adjust offset
+          window.scrollTo({ top: y, behavior: "smooth" });
+        });
+      });
+
+      // Accessibility: allow changing WhatsApp message quickly from console if needed
+      // e.g. change message: window.updateWhatsApp("New message")
+      window.updateWhatsApp = function (msg, phone) {
+        const p = phone || waPhone;
+        const newHref = `https://wa.me/${p}?text=${encodeURIComponent(msg)}`;
+        document.getElementById("whatsappFloat").setAttribute("href", newHref);
+      };
+    </script>
+  </body>
+</html>

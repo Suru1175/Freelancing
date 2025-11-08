@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar fix */
+.navbar {
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  border: none;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section spacing */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Service card hover */
+.service-card img {
+  transition: transform 0.3s;
+}
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+/* CERTIFICATES GRID */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Individual certificate */
+.certificate-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* Certificate card styling */
+#certificates .card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 15px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Certificate images */
+#certificates .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Certificate text */
+#certificates .card h5 {
+  font-size: 1rem;
+  color: #111;
+  margin-top: 5px;
+}
+
+/* TEAM SECTION */
+.team-img-container {
+  width: 100%;
+  height: 350px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.team-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures full visibility */
+}
+
+/* WhatsApp floating */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+/* Scroll to top button */
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Map rounded corners */
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  margin-top: 0;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 992px) {
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  #certificates .card {
+    height: auto;
+  }
+}
