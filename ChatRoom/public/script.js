@@ -17,7 +17,8 @@ function joinChat() {
   document.getElementById("chatSection").classList.remove("d-none");
 
   // CONNECT TO SOCKET.IO SERVER
-  socket = io("https://YOUR_PUBLIC_URL");
+  socket = io("https://freelancing-2g3k.onrender.com");
+
 
   // Send join info
   socket.emit("join", { username, avatar });
@@ -102,3 +103,4 @@ function showTyping(user) {
 function clearTyping() {
   document.getElementById("typingStatus").innerText = "";
 }
+
