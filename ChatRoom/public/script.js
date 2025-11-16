@@ -16,35 +16,49 @@ function joinChat() {
   document.getElementById("usernameDiv").classList.add("d-none");
   document.getElementById("chatSection").classList.remove("d-none");
 
-  // CONNECT TO SOCKET.IO SERVER
-  socket = io("https://freelancing-2g3k.onrender.com");
+  // CONNECT TO SOCKET.IO SERVER (Render)
+  socket = io("https://freelancing-2g3k.onrender.com", {
+    transports: ["websocket", "polling"]
+  });
 
-
-  // Send join info
+  // Tell server you joined
   socket.emit("join", { username, avatar });
 
-  // Receive messages
+  // Receive incoming messages
   socket.on("chat-message", (data) => {
     displayMessage(data.username, data.text, data.avatar);
   });
 
+  // Receive typing status
   socket.on("typing", (data) => {
     showTyping(data.username);
   });
+
+  // New user joins
+  socket.on("user-joined", (data) => {
+    displaySystemMessage(`${data.username} joined the chat`);
+  });
+
+  // User left
+  socket.on("user-left", (name) => {
+    displaySystemMessage(`${name} left the chat`);
+  });
 }
 
+// Send chat message
 function sendMessage() {
   const msg = document.getElementById("msgInput").value.trim();
   if (!msg) return;
 
   socket.emit("chat-message", msg);
 
+  // Immediately show my message
   displayMessage(username, msg, avatar);
 
   document.getElementById("msgInput").value = "";
 }
 
-// Display message
+// Display chat message
 function displayMessage(user, text, avatarImg) {
   const messages = document.getElementById("messages");
 
@@ -61,8 +75,7 @@ function displayMessage(user, text, avatarImg) {
   if (isMe) avatarEl.classList.add("me-avatar");
 
   const bubble = document.createElement("div");
-  bubble.classList.add("chat-msg");
-  bubble.classList.add(isMe ? "msg-right" : "msg-left");
+  bubble.classList.add("chat-msg", isMe ? "msg-right" : "msg-left");
 
   bubble.innerHTML = `
         <div class="username">${user}</div>
@@ -86,7 +99,6 @@ function displayMessage(user, text, avatarImg) {
 // Typing indicator
 document.addEventListener("input", () => {
   if (!socket) return;
-
   socket.emit("typing", { username });
 });
 
@@ -104,3 +116,14 @@ function clearTyping() {
   document.getElementById("typingStatus").innerText = "";
 }
 
+// System messages (joined / left)
+function displaySystemMessage(text) {
+  const messages = document.getElementById("messages");
+
+  const div = document.createElement("div");
+  div.classList.add("system-msg");
+  div.innerText = text;
+
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+}
