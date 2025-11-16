@@ -17,7 +17,7 @@ function joinChat() {
   document.getElementById("chatSection").classList.remove("d-none");
 
   // CONNECT TO SOCKET.IO SERVER (Render)
-  socket = io("https://freelancing-2g3k.onrender.com", {
+  socket = io("https://freelancing-x4bz.onrender.com", {
     transports: ["websocket", "polling"]
   });
 
@@ -127,3 +127,4 @@ function displaySystemMessage(text) {
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
 }
+
