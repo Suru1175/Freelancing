@@ -1,0 +1,13 @@
+.message {
+    padding: 8px 12px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.me {
+    background: #d4f7d4;
+    margin-left: auto;
+    text-align: right;
+}
