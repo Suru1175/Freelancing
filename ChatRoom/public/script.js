@@ -9,7 +9,6 @@ function joinChat() {
 
   if (!username) return alert("Enter your name!");
 
-  // default avatar if blank
   if (!avatar) {
     avatar = "https://api.dicebear.com/7.x/thumbs/svg?seed=" + username;
   }
@@ -17,39 +16,34 @@ function joinChat() {
   document.getElementById("usernameDiv").classList.add("d-none");
   document.getElementById("chatSection").classList.remove("d-none");
 
-  socket = new WebSocket("wss://YOUR_PUBLIC_URL");
+  // CONNECT TO SOCKET.IO SERVER
+  socket = io("https://YOUR_PUBLIC_URL");
 
-  socket.onmessage = (event) => {
-    const data = JSON.parse(event.data);
+  // Send join info
+  socket.emit("join", { username, avatar });
 
-    if (data.type === "chat") {
-      displayMessage(data.user, data.text, data.avatar);
-    }
+  // Receive messages
+  socket.on("chat-message", (data) => {
+    displayMessage(data.username, data.text, data.avatar);
+  });
 
-    if (data.type === "typing") {
-      showTyping(data.user);
-    }
-  };
+  socket.on("typing", (data) => {
+    showTyping(data.username);
+  });
 }
 
 function sendMessage() {
   const msg = document.getElementById("msgInput").value.trim();
   if (!msg) return;
 
-  const data = {
-    type: "chat",
-    user: username,
-    avatar: avatar,
-    text: msg,
-  };
+  socket.emit("chat-message", msg);
 
-  socket.send(JSON.stringify(data));
   displayMessage(username, msg, avatar);
 
   document.getElementById("msgInput").value = "";
 }
 
-// WhatsApp-style bubble with avatar
+// Display message
 function displayMessage(user, text, avatarImg) {
   const messages = document.getElementById("messages");
 
@@ -88,16 +82,11 @@ function displayMessage(user, text, avatarImg) {
   clearTyping();
 }
 
-// typing broadcast
+// Typing indicator
 document.addEventListener("input", () => {
   if (!socket) return;
 
-  socket.send(
-    JSON.stringify({
-      type: "typing",
-      user: username,
-    })
-  );
+  socket.emit("typing", { username });
 });
 
 function showTyping(user) {
